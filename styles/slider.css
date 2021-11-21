@@ -1,0 +1,35 @@
+.slider {
+	position: relative;
+}
+.product__small_img img {
+	height: 100%;
+	width: 100%;
+	margin: 10px 0;
+	cursor: pointer;
+	display: block;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+	background-color: #F5F5F5;
+}
+.product__small_img:focus {
+	border: 1px solid #2196F3;
+}
+.product__small_img {
+	float: left;
+}
+.product {
+	padding: 0 30px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img_container img {
+	height: 100%;
+	width: 100%;
+	max-width: 350px;
+}
+.img_container {
+	padding: 10px;
+}

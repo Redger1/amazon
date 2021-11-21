@@ -14,12 +14,21 @@
 			<p>Participate in Autumn Giveaway and treat yourself <br>to nice and refreshing cosmetics for free</p>
 		</div>
 		<div class="header__img">
-			<img src="assets/banner_picture.png" height="165" width="440" alt="">
+			<img src="assets/banner_picture.png" height="165" width="440">
 		</div>
 	</header>
 	<main>
 		<div class="slider">
-			
+			<div class="product">
+				<div class="product__small_img">
+					<img src="assets/slider/first.png" onClick="sliderFunc(this)">
+					<img src="assets/slider/second.png" onClick="sliderFunc(this)">
+					<img src="assets/slider/third.png" onClick="sliderFunc(this)">
+				</div>
+				<div class="img_container">
+					<img id="imageBox" src="assets/slider/big/first.png">
+				</div>
+			</div>
 		</div>
 		<div class="details">
 			<div class="details__seller-status">
@@ -54,7 +63,9 @@
 					<h1 id="price-after">$0.00 free</h1>
 				</div>
 				<button>select</button>
-				<div class="details__purchase__logo"></div>
+				<div class="details__purchase__logo">
+					<img src="assets/amazon_prime_logo.png" height="28" width="160">
+				</div>
 			</div>
 		</div>
 	</main>
@@ -76,7 +87,11 @@
 				<li>Helps strengthen skin’s own moisture barrier so more moisture stays in. Skin that holds onto moisture has a youthful-looking glow.</li>
 			</ul>
 		</div>
-		<a id="read_more" href="#">Read more...</a>
+		<div class="overview__key">
+			<h5>Key Ingredients</h5>
+			<p>Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
+		</div>
+		<a onClick="readMore(this); return false" id="read_more" href="#">Read more...</a>
 	</div>
 	<div class="instruction">
 		<h1>How does it work?</h1>
@@ -84,22 +99,22 @@
 			<div class="instruction__easy circle">
 				<h2>Easy as 1-2-3</h2>
 			</div>
-			<img src="assets/arrow.svg">
+			<img class="arrow" src="assets/arrow.svg">
 			<div class="circle">
 				<img src="assets/1.png" height="81" width="80" alt="">
 				<h3>Choose product</h3>
 			</div>
-			<img src="assets/arrow.svg">
+			<img class="arrow" src="assets/arrow.svg">
 			<div class="circle">
 				<img src="assets/2.png" height="80" width="68" alt="">
 				<h3>Byu product</h3>
 			</div>
-			<img src="assets/arrow.svg">
+			<img class="arrow" src="assets/arrow.svg">
 			<div class="circle">
 				<img src="assets/3.png" height="80" width="81" alt="">
 				<h3>Test and share review</h3>
 			</div>
-			<img src="assets/arrow.svg">
+			<img class="arrow" src="assets/arrow.svg">
 			<div class="circle">
 				<img src="assets/4.png" height="80" width="73" alt="">
 				<h3>Get 100% money back</h3>
@@ -127,5 +142,6 @@
 			<p>© All Rights Reserved</p>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
